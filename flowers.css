@@ -344,6 +344,7 @@ h2 {
 /* Deals Section */
 .deals {
   padding: 50px 20px;
+  margin-top: 20px;
 }
 
 .deals-grid {
@@ -352,6 +353,7 @@ h2 {
   max-width: 1100px;
   margin: 0 auto;
   flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 .left-column {
@@ -383,26 +385,32 @@ h2 {
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* full dark overlay */
   color: white;
-  width: 100%;
   padding: 20px;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
 }
+
 
 .overlay h3 {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   margin-bottom: 10px;
-}
+  display: flex;
+  justify-content: center;}
 
 .overlay a {
-  text-decoration: none;
+  
   color: white;
-  background: orange;
   padding: 8px 16px;
   border-radius: 4px;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 /* Subscribe Section */
@@ -461,11 +469,22 @@ h2 {
   }
 
   .subscribe-form {
-    flex-direction: column;
+    flex-direction:row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
   }
 
-  .subscribe-form input,
-  .subscribe-form button {
+  .subscribe-form input
+ {
     width: 100%;
+    max-width: 400px;
+    flex: 2;
+    min-width: 30%;
+  }
+  .s-btn{
+    flex: 1;
+    min-width: 30%;
+
   }
 }

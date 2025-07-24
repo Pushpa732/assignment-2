@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f5f7fe;
+
 }
 
 body {
@@ -24,11 +24,15 @@ body {
   height: 40px;
 }
 
-.nav-links {
+.nav {
   display: flex;
   gap: 25px;
   align-items: center;
 
+}
+.nav-links{
+  display: flex;
+  gap: 25px;
 }
 
 .nav-links a {
